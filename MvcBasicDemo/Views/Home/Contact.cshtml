@@ -1,0 +1,13 @@
+﻿@using MvcApplication1.Models
+
+@model List<Contact>
+<table>
+@foreach (Contact contact in Model)
+{
+    <tr>
+    <td>@contact.name</td>
+    <td>@contact.phone</td>
+    <td>@contact.email</td>
+    </tr>
+}
+    </table>
